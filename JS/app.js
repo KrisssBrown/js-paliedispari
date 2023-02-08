@@ -43,11 +43,49 @@
 
 // chiedere all'utente di scegliere pari o dispari e di inserire un numero
 let scelta = prompt('Seleziona pari o dispari!')
+let numeroUtente = parseInt (prompt('Inserisci un numero da 1 a 5!'))
+console.log ('UTENTE:', numeroUtente)
 
-if (scelta === 'pari'){
-    
-}
+
+
+// // // // // // // // // // if (scelta === 'pari'){
+// // // // // // // // // //     numeroUtente = prompt('Inserisci un numero da 1 a 5')
+// // // // // // // // // // }
+// // // // // // // // // // else{
+// // // // // // // // // //     numeroUtente = prompt('Inserisci un numero da 1 a 5')
+// // // // // // // // // // }
+
+
 
 // generare un numero random per il pc usando una funzione
+let numeroPc = Math.floor(Math.random() * 5)
+console.log('PC:',numeroPc)
+
+
 // sommiamo i 2 numeri
+let sum = (numeroUtente + numeroPc)
+console.log('SOMMA:',sum)
+
+
 // stabiliamo se il risultato è pari o dispari con una funzione
+let resto = sum % 2
+console.log('RESTO:', resto)
+
+if(scelta = 'pari' && resto === 0){
+    alert('YOU WINS!')
+}
+else if(scelta = 'dispari' && resto === 1){
+    alert('YOU WINS!')
+}
+else{
+    alert('PC WINS!')
+}
+
+
+
+// // // // // // // // // // // else if (scelta = 'dispari' && resto === 0){
+// // // // // // // // // // //     alert('PC WINS!')
+// // // // // // // // // // // }
+// // // // // // // // // // // else if(scelta = 'pari' && resto === 1){
+// // // // // // // // // // //     alert('PC WINS!')
+// // // // // // // // // // // }
